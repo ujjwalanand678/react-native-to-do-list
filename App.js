@@ -16,7 +16,7 @@ export default function App() {
     setCourseGoals((currentGoal) => [...currentGoal, enteredGoalText]);
     // setCourseGoals(currentCourseGoals => currentCourseGoals.concat(enteredGoalText));
 
-    setEnteredGoalText(""); // clear input after adding;
+    // setEnteredGoalText(""); // clear input after adding;
   }
   // enteredGoalText → is a state variable that holds the text from an input box.
   // setCourseGoals → is a state setter that updates the array of goals.
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 16,
-    paddingTop: 50,
+    paddingTop: 45,
     // justifyContent: "center",
     // backgroundColor:"white"
   },
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingBottom: 24,
+    paddingBottom: 20,
     borderBottomWidth: 1,
     borderColor: "#cccccc",
     marginBottom: 24,
@@ -81,13 +81,16 @@ const styles = StyleSheet.create({
     borderColor: "#cccccc",
     width: "70%",
     marginRight: 8,
-    padding: 10,
+    padding: 8,
   },
   goalsContainer: {
     flex: 4,
-  },
+  }, 
   goalItem:{
-    backgroundColor: "#5e0acc"
+    backgroundColor: "#5e0acc",
+    borderRadius: 5,
+    padding: 8,
+    marginBottom:8,
   },
   goalItemText:{
     color:"white"
